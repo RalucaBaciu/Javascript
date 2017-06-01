@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+
+    var date=new Date();
+    var currentDate=date.getDate();
+    var dayOfWeek;
+    console.log(currentDate);
+    
+    function switchTask(){
+        switch(currentDate){
+            case 29:
+                dayOfWeek="Monday";
+                break;
+            case 30:
+                dayOfWeek="Tuesday";
+                break;
+            case 31:
+                dayOfWeek="Wednesday";
+                break;
+            case 1:
+                dayOfWeek="Thursday";
+                break;
+            case 2:
+                dayOfWeek="Friday";
+                break;
+            case 3:
+                dayOfWeek="Saturday";
+                break;
+            case 4:
+                dayOfWeek="Sunday";
+                break;
+            default:
+                dayOfWeek="Invalid date";
+                break;
+        }
+        document.getElementById("demo").innerHTML = dayOfWeek +" "+ currentDate+" "+date.getHours()+":"+date.getMinutes();
+    }
+    switchTask();
+</script>
+
+</body>
+</html>

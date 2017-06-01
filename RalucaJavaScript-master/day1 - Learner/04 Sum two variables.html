@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>Please enter 2 numbers below</p>
+<form>
+<input type="number" id="input1"/>
+<input type="number" id="input2"/>
+</form>
+<div><button id="button1">Sum of the two numbers</button></div>
+<div id="demo"></div>
+
+<script>
+      document.getElementById("button1").onclick = function(){
+          var nr1=parseInt(document.getElementById("input1").value);
+          var nr2=parseInt(document.getElementById("input2").value);
+          
+          var sum=nr1+nr2;
+          
+          document.getElementById("demo").innerHTML = sum;
+      }
+</script>
+
+</body>
+</html>

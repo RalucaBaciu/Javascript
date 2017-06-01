@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title> Interest Calculator</title>
+</head>
+<body>
+<h1>Calculae the difference</h1>
+<h2>Calculate the difference </h2>
+<input id="input1" type=”number”/> + 
+<input id="input2" type=”number”/> + 
+<input id="input3" type=”number”/>
+
+<input type="button" id="answer2" value="Answer2" />
+
+<div id="result"></div>
+<div id="resultg"></div>
+<div id="resulth"></div>
+<div id="resultj"></div>
+
+
+<script>	
+    document.getElementById("answer2").onclick = function(){
+      
+        var nr1=parseInt(document.getElementById("input1").value);
+        var nr2=parseInt(document.getElementById("input2").value);
+        var nr3=parseInt(document.getElementById("input3").value);
+        
+        var sum = nr1+nr2+nr3;
+        var calc = (nr1+nr2)*nr3;
+        
+        document.getElementById("result").innerHTML = "The sum of the three numbers is "+sum;
+        
+        document.getElementById("resultg").innerHTML = "((a+b)*c) is "+calc;
+        
+        document.getElementById("resulth").innerHTML = "The difference between the first and second operations is "+(sum-calc);
+        
+        document.getElementById("resultj").innerHTML = "The difference between the second and first operations is "+(calc-sum);
+        
+      
+  }	
+		
+
+</script>
+
+
+
+</body>
+</html>
